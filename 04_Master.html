@@ -379,7 +379,13 @@ plot.NDVI(dat)</code></pre>
 satellite saturates with time since fire. Why do you think it saturates
 rather than increasing linearly with time?</p>
 <blockquote>
-<p><em>Answer 1:</em></p>
+<p><em>Answer 1:</em> The fynbos greenness represents the population
+density in the habitat. The poplation in a habitat can grow until it
+reaches a point at which the habitat can no longer accomodate anymore
+individuals. At this point, the population has reached the habitat’s
+carrying capacity. So, greenness cannot increase linearly with time
+because the the habitat has a carrying capacity for which the population
+density cannot exceed.</p>
 </blockquote>
 <p><br></p>
 </div>
@@ -460,7 +466,11 @@ summary(fit_negexpS)</code></pre>
 <p>Lots more parameters…</p>
 <p>Q2: How do the estimates for the common parameters compare?</p>
 <blockquote>
-<p><em>Answer 2:</em></p>
+<p><em>Answer 2:</em> For both models, the parameter estimates are very
+significant and therefore have a significant effect on the NDVI values.
+The difference in these estimates between the two models is very small
+and therefore not very significant (i.e, 0.04, 0.04 and 0.19 for alpha,
+gamma and lambda respectively), so the estimates are similar.</p>
 </blockquote>
 <p><br></p>
 </div>
@@ -489,12 +499,21 @@ p-value.</p>
 <p><br></p>
 <p>Q3: Which model is better?</p>
 <blockquote>
-<p><em>Answer 3:</em></p>
+<p><em>Answer 3:</em> The second model is better, based on the residual
+sum of squares. The second model has a smaller residual sum of sqaures
+than the first model and can therefore explain more variation in the
+NDVI than the first model, and has less variation in NDVI caused by
+random effect than the first model.</p>
 </blockquote>
 <p>Q4: How many degrees of freedom are there in this ANOVA and why
 (i.e. what are they)?</p>
 <blockquote>
-<p><em>Answer 4:</em></p>
+<p><em>Answer 4:</em> This ANOVA has 2 degrees of freedom, this is the
+difference between the residual degrees of freedom of the individual
+models (the residual degrees of freedom for the models are 135 and 133
+for the first and second model respectively). The residual degrees of
+freedom are derived from subtracting the number of estimated parameters
+from the total number of observations in the data.</p>
 </blockquote>
 <p><br></p>
 </div>
@@ -605,7 +624,11 @@ significantly different at an <span class="math inline">\(\alpha\)</span> of <sp
 <p><br></p>
 <p>Q5: Is there a preferred model and if so, which one?</p>
 <blockquote>
-<p><em>Answer 5:</em></p>
+<p><em>Answer 5:</em> Based on the difference between the AIC values of
+both models (266957.8), there is a significant difference between the
+two models at a 5% significance level. Thefore there is a preferred
+model, which is the second model because it has a lower AIC value than
+the first model.</p>
 </blockquote>
 <p><br></p>
 <p>The nice thing about AIC is that the models you compare do not have
@@ -623,7 +646,11 @@ MLE models…</p>
 the AIC of the MLE models? Hint: type <code>?AIC</code> into the R
 console and do some reading.</p>
 <blockquote>
-<p><em>Answer 6:</em></p>
+<p><em>Answer 6:</em> The AIC is based on log-likelihood of the
+obsereved data which has been maximized. The NLS models are not based on
+log-likelihood, but residuals of the observed data which have been
+minimized. We therefore cannot compare the NLS and MLE models using AIC
+because the models do not measure the same thing.</p>
 </blockquote>
 <p><br></p>
 </div>
