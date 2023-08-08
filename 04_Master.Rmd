@@ -32,7 +32,7 @@ plot.NDVI(dat)
 
 Q1: This plot suggests that Fynbos greenness (NDVI) as observed from satellite saturates with time since fire. Why do you think it saturates rather than increasing linearly with time?
 
->*Answer 1:*  The fynbos greenness represents the population density in the habitat. The poplation in a habitat can grow until it reaches a point at which the habitat can no longer accomodate anymore individuals. At this point, the population has reached the habitat's carrying capacity. So, greenness cannot increase linearly with time because the the habitat has a carrying capacity for which the population density cannot exceed.
+>*Answer 1:*  The fynbos greenness represents the population density in the habitat. The poplation in a habitat can grow until it reaches a point at which the habitat can no longer accomodate anymore individuals. At this point, the population has reached the habitat's carrying capacity. So, greenness cannot increase linearly with time because the habitat has a carrying capacity for which the population density cannot exceed.
 
 <br>
 
